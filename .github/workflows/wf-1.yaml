@@ -1,0 +1,12 @@
+name: workflow-1
+on: [push]
+jobs:
+  build-image:
+    runs-on: ubuntu-latest
+    steps:
+      - run: docker build --tag img:latest
+  
+  test-application:
+    runs-on: ubuntu-latest
+    steps:
+      - run: python .
