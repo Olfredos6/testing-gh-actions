@@ -4,7 +4,7 @@ jobs:
   build-image:
     runs-on: ubuntu-latest
     steps:
-      - run: docker build --tag img:latest
+      - run: docker build --tag img:latest .
   
   test-application:
     runs-on: ubuntu-latest
