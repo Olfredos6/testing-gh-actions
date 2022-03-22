@@ -11,4 +11,5 @@ jobs:
   test-application:
     runs-on: ubuntu-latest
     steps:
-      - run: python .
+      - uses: actions/checkout@v2
+      - run: python -m unittest
